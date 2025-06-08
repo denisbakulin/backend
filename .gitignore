@@ -1,25 +1,59 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.env
-env/
+
+# Virtual environment
 venv/
+env/
 ENV/
-venv.bak/
+.venv/
+.ENV/
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+pip-wheel-metadata/
+
+# Python-specific caches and logs
+*.log
+*.pot
+*.mo
 *.sqlite3
 *.db
+instance/
+*.pid
 
-pip-wheel-metadata/
-*.log
+# Environment variables
+.env
+.env.*
 
+# Flask/Misc
+*.bak
+*.swp
+*.swo
 
-../instance/
+# Coverage / test / lint tools
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.pytest_cache/
 
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
 
-*.pyc
-*.pyo
-*.pyd
+# macOS / Windows / Linux system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-
-gunicorn.pid
+# Docker
+*.dockerignore
+docker-compose.override.yml

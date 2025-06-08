@@ -5,7 +5,6 @@ import os
 
 load_dotenv()
 
-
 class Config:
     SERVER_URL = "http://127.0.0.1:5000"
 
@@ -20,6 +19,7 @@ class Config:
     SQLALCHEMY_DATABASE_URI = "sqlite:///palmyra.db"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
+
 
     SECRET_KEY = os.getenv("SECRET_KEY")
     WTF_CSRF_ENABLED = False
