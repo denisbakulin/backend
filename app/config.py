@@ -16,7 +16,7 @@ class Config:
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(minutes=60)
     JWT_REFRESH_TOKEN_EXPIRES = timedelta(weeks=4)
 
-    SQLALCHEMY_DATABASE_URI = "sqlite:///palmyra.db"
+    SQLALCHEMY_DATABASE_URI = os.getenv("DB_URI")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
 
